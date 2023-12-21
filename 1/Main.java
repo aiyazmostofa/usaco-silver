@@ -8,6 +8,7 @@ public class Main {
     int N;
     int M;
     int C;
+
     void run() {
         N = in.nextInt();
         M = in.nextInt();
@@ -27,7 +28,8 @@ public class Main {
             if (check(m)) {
                 ans = m;
                 r = m - 1;
-            } else l = m + 1;
+            } else
+                l = m + 1;
         }
         out.println(ans);
     }
