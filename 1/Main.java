@@ -4,7 +4,7 @@ import java.math.*;
 
 // http://www.usaco.org/index.php?page=viewproblem2&cpid=858
 public class Main {
-    long[] array;
+    int[] array;
     int N;
     int M;
     int C;
@@ -14,17 +14,17 @@ public class Main {
         M = in.nextInt();
         C = in.nextInt();
 
-        array = new long[N];
+        array = new int[N];
         for (int i = 0; i < N; i++) {
             array[i] = in.nextInt();
         }
         Arrays.sort(array);
 
-        long l = 0;
-        long r = 1_000_000_000;
-        long ans = -1;
+        int l = 0;
+        int r = 1_000_000_000;
+        int ans = -1;
         while (l <= r) {
-            long m = (l + r) / 2;
+            int m = (r - l) / 2 + l;
             if (check(m)) {
                 ans = m;
                 r = m - 1;
@@ -34,7 +34,7 @@ public class Main {
         out.println(ans);
     }
 
-    boolean check(long m) {
+    boolean check(int m) {
         int count = 1;
         int prev = 0;
         for (int i = 1; i < N; i++) {
