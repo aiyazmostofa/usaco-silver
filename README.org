@@ -1,0 +1,6 @@
+* USACO Silver
+Self explanatory.
+Oh yeah, [[https://boejiden.uk][check this out]]!
+
+** License
+[[file:LICENSE][GNU General Public License v3.0]]
