@@ -48,11 +48,11 @@ public class Main {
 
     static String IN = "convention.in";
     static String OUT = "convention.out";
-    Kattio in;
+    Katti in;
     PrintWriter out;
 
     Main(InputStream input, OutputStream output) {
-        in = new Kattio(input);
+        in = new Katti(input);
         out = new PrintWriter(output);
     }
 
@@ -67,11 +67,11 @@ public class Main {
         main.out.close();
     }
 
-    class Kattio {
+    class Katti {
         BufferedReader br;
         StringTokenizer st;
 
-        Kattio(InputStream is) {
+        Katti(InputStream is) {
             br = new BufferedReader(new InputStreamReader(is));
         }
 
