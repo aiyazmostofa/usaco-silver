@@ -91,5 +91,5 @@ func main() {
 	tmpl = template.Must(template.ParseGlob("templates.html"))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/solution/", solutionHandler)
-	log.Fatalln(http.ListenAndServe(":8080", nil))
+	log.Fatalln(http.ListenAndServe("127.0.0.1:8080", nil))
 }
