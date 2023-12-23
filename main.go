@@ -7,6 +7,7 @@ import (
 	"os"
 	"slices"
 	"text/template"
+	h "html"
 
 	"github.com/gomarkdown/markdown"
 	"github.com/gomarkdown/markdown/html"
@@ -84,7 +85,7 @@ func solutionHandler(w http.ResponseWriter, r *http.Request) {
 		Title    string
 		Code    string
 		Content string
-	}{problems[idx].Title, string(code), string(mdToHTML(md))})
+	}{problems[idx].Title, h.EscapeString(string(code)), string(mdToHTML(md))})
 }
 
 func main() {
