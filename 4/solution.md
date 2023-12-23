@@ -1,5 +1,5 @@
 $N$ nodes connected with $N-1$ edges is a fancy way of saying trees.
-Lets call the set of colors $c$ and the our nodes $a$.
+Lets call the set of colors $c$ and our nodes $a$.
 Let's assign $a_1$ to $c_1$.
 Let's do DFS starting from $a_1$, assigning the neighbors of $a_1$: $c_2$, $c_3$, etc.
 Then, let's traverse to one of the neighbors of $a_1$.
