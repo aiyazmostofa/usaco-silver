@@ -4,7 +4,7 @@ Let's assign $a_1$ to $c_1$.
 Let's do DFS starting from $a_1$, assigning the neighbors of $a_1$: $c_2$, $c_3$, etc.
 Then, let's traverse to one of the neighbors of $a_1$.
 For example, let's say $a_1 \leftrightarrow a_2$ and $a_2$ has been assigned $c_2$.
-What can we assign the neighbors $a_2$?
+What can we assign the neighbors of $a_2$?
 We can't assign it $c_1$ or $c_2$, but can we assign it $c_3$?
 Let's say you couldn't.
 That would mean there is a neighbor of $a_2$ with $c_3$.
