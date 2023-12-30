@@ -4,7 +4,7 @@ I know line sweeping, I knew this algorithm existed.
 But this is USACO Silver!
 Them pulling out a topic like line sweeping really messed me up.
 Then, after learning the algorithm properly, I got everything except test case 10 correct.
-It was only after I ate a carolina reaper tender, spending my time on the lavatory, that I realized that my initial solution used lower key instead of ceiling key.
+It was only after I took one bite of a carolina reaper tender, spending my time on the lavatory, that I realized that my initial solution used lower key instead of ceiling key.
 This was problematic because what if two $y$'s were the same.
 
 The main sticking point for me for this algorithm is the idea that segments intersect only if they are at point neighbors, either at a closing or at an opening.
