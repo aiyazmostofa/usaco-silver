@@ -40,20 +40,20 @@ public class Main {
         int b = -1;
         for (int[] e : xEvents) {
             if (e[0] == 1) {
-                yEvents.put(e[2], e[1]);
-                Integer temp = yEvents.higherKey(e[2]);
+                Integer temp = yEvents.ceilingKey(e[2]);
                 if (temp != null && intersects(matrix[yEvents.get(temp)], matrix[e[1]])) {
                     a = e[1];
                     b = yEvents.get(temp);
                     break;
                 }
 
-                temp = yEvents.lowerKey(e[2]);
+                temp = yEvents.floorKey(e[2]);
                 if (temp != null && intersects(matrix[yEvents.get(temp)], matrix[e[1]])) {
                     a = e[1];
                     b = yEvents.get(temp);
                     break;
                 }
+                yEvents.put(e[2], e[1]);
             } else {
                 yEvents.remove(e[2]);
                 Integer lower = yEvents.lowerKey(e[3]);
