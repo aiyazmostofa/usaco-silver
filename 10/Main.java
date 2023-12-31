@@ -4,18 +4,16 @@ import java.math.*;
 
 // http://www.usaco.org/index.php?page=viewproblem2&cpid=967
 public class Main {
-    long MAX = 1_000_000_000_000L;
-
     void run() {
         int N = in.nextInt();
-        long L = in.nextInt();
+        int L = in.nextInt();
 
         Cow[] array = new Cow[N];
         long w = 0;
         PriorityQueue<Cow> pq = new PriorityQueue<>((a, b) -> {
-            long c = a.d == -1 ? a.x : (L - a.x);
-            long d = b.d == -1 ? b.x : (L - b.x);
-            return Long.compare(c, d);
+            int c = a.d == -1 ? a.x : (L - a.x);
+            int d = b.d == -1 ? b.x : (L - b.x);
+            return Integer.compare(c, d);
         });
 
         for (int i = 0; i < N; i++) {
@@ -23,10 +21,10 @@ public class Main {
             pq.add(array[i]);
             w += array[i].w;
         }
-        Arrays.sort(array, Comparator.comparingLong(c -> c.x));
+        Arrays.sort(array, Comparator.comparingInt(c -> c.x));
 
         w = (long) Math.ceil(w / 2.0);
-        long T = 0;
+        int T = 0;
         int l = 0;
         int r = N - 1;
         while (w > 0) {
@@ -46,9 +44,9 @@ public class Main {
                 left.add(array[i]);
         }
 
-        Collections.sort(left, Comparator.comparingLong(c -> c.x));
+        Collections.sort(left, Comparator.comparingInt(c -> c.x));
 
-        long coll = 0;
+        int coll = 0;
         for (int i = 0; i < N; i++) {
             if (array[i].d == -1)
                 continue;
