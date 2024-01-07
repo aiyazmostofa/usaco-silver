@@ -90,6 +90,12 @@
         "done": true
     },
     {
+        "title": "Bovine Acrobatics",
+        "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1350",
+        "index": "R1",
+        "done": true
+    },
+    {
         "title": "Clock Tree",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1016",
         "index": "16",
