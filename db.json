@@ -81,13 +81,13 @@
         "title": "Swapity Swapity Swap",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1014",
         "index": "14",
-        "done": false
+        "done": true
     },
     {
         "title": "Triangles",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1015",
         "index": "15",
-        "done": false
+        "done": true
     },
     {
         "title": "Clock Tree",
