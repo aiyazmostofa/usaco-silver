@@ -165,19 +165,19 @@
         "title": "Year of the Cow",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1111",
         "index": "26",
-        "done": false
+        "done": true
     },
     {
         "title": "Just Green Enough",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1112",
         "index": "27",
-        "done": false
+        "done": true
     },
     {
         "title": "Maze Tac Toe",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1134",
         "index": "28",
-        "done": false
+        "done": true
     },
     {
         "title": "Do You Know Your ABCs?",
