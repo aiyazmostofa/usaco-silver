@@ -183,13 +183,13 @@
         "title": "Do You Know Your ABCs?",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1135",
         "index": "29",
-        "done": false
+        "done": true
     },
     {
         "title": "Acowdemia",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1136",
         "index": "30",
-        "done": false
+        "done": true
     },
     {
         "title": "Closest Cow Wins",
@@ -201,13 +201,13 @@
         "title": "Connecting Two Barns",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1159",
         "index": "32",
-        "done": false
+        "done": true
     },
     {
         "title": "Convoluted Intervals",
         "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1160",
         "index": "33",
-        "done": false
+        "done": true
     },
     {
         "title": "Searching for Soulmates",
